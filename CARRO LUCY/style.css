@@ -1,0 +1,96 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fondo{
+    background: url(./ciudad.jpeg);
+    height: 100rem;
+    width: 100%;
+    background-size: cover;
+}
+
+.fondo-oculto{
+    animation: fondo-move 12s infinite linear;
+}
+
+.carro{
+    position: absolute;
+    width: 46rem;
+    top: 83rem;
+    right: 49rem;
+}
+
+.llanta1{
+
+    position: absolute;
+    width: 11rem;
+    top: 89rem;
+    left: 97rem;
+}
+
+.llanta1-oculto{
+
+    animation: llantas-move 3s linear infinite;
+}
+.llanta2{
+
+    position: absolute;
+    width: 11rem;
+    top: 89rem;
+    left: 65rem;
+}
+
+.llanta2-oculto{
+
+    animation: llantas-move 3s linear infinite;
+}
+
+.luz{
+
+    width: 19rem;
+    position: absolute;
+    top:86rem;
+    right: 35rem;
+    opacity: 65%;
+}
+
+.sprite{
+    background: url(./sprite.png);
+    position: absolute;
+    top: 94rem;
+    right: 94rem;
+    height: 89px;
+    width: 121px;
+}
+
+.sprite_oculto{
+    animation: sprite-move 0.5s infinite steps(7);
+
+}
+
+@keyframes sprite-move{
+
+    100%{
+
+        background-position-x: 849px;
+    }
+
+}
+
+@keyframes llantas-move{
+
+    100%{
+
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fondo-move{
+
+    100%{
+
+        background-position-x: -20000px;
+    }
+}
